@@ -1,0 +1,45 @@
+/* General styles*/
+*{
+    
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+h1{
+    margin: 10px;
+}
+
+
+.box{
+    background-color:steelblue;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 2px 8px 3px rgba(0,0,0,0.75);
+    transform: translateX(200%);
+    transition: transform 0.5s ease;
+    
+}
+.box:nth-of-type(even){
+    transform: translateX(-200%);
+}
+.box.show{
+    transform: translateX(0);
+}
+
+
+.box h3{
+   font-size: 40px;
+   color: white;
+}
